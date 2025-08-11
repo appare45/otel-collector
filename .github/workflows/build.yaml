@@ -13,7 +13,7 @@ jobs:
         os: [macos-14, ubuntu-24.04]
     runs-on: ${{matrix.os}}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Set GOBIN
         run: echo "GOBIN=$RUNNER_TEMP/gobin" | tee $GITHUB_ENV
       - name: Setup Go
