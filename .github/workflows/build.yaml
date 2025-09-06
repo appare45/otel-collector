@@ -17,7 +17,7 @@ jobs:
       - name: Set GOBIN
         run: echo "GOBIN=$RUNNER_TEMP/gobin" | tee $GITHUB_ENV
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: 1.23
           cache-dependency-path: builder-config.yaml
